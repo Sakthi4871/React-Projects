@@ -1,0 +1,318 @@
+.bg_about{
+    width: 100%;
+    height: 70vh;
+    background-image: url(../Images/about_bg4.jpg);
+    background-size: cover;
+}
+.bg_about h1{
+    color: white;
+    background-color: rgb(49, 146, 49);
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .about_container1, .about_container2, .about_container3{
+    width: 80%;
+    display: flex;
+    margin-top: 5%;
+    border: 1px solid rgb(0, 128, 0);
+    box-shadow: 0 0 10px 2px rgba(0, 128, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+  }
+  .about_content1{
+    width: 60%;
+    height: auto;
+  }
+  .about_img1{
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: right;
+  }
+  .about_img1 img{
+    width: 80%;
+    height: 100%;
+    
+  }
+  .about_container2{
+    display: flex;
+    justify-content: right;
+    float: right;
+    margin-bottom: 5%;
+  }
+  .about_content1 p span{
+    font-weight: bold;
+  }
+  .about_end{
+    width: 100%;
+    height: auto;
+    background-color: rgb(230, 223, 226);
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .end-logo{
+    width: 15%;
+    height: auto;
+  }
+  .end-logo img{
+    width: 100%;
+    height: 100%;
+  }
+  .end-content{
+    width: 85%;
+    height: auto;
+  }
+  .end-content p{
+    padding: 2%;
+  }
+
+  @media(max-width:480px){
+    .about_container1,.about_container2,.about_container3{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .about_content1,.about_img1{
+        width: 100%;
+    }
+
+  }
+
+
+  /* ----------------------------------Gallereyyyy------------------------------ */
+
+  .gallery-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    
+  }
+  .gallery-image1{
+    width: 20%;
+    height: auto;
+  }
+  .gallery-image1 img{
+    width: 100%;
+    height: auto;
+  } 
+  .gallery-content1{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5%;
+    text-shadow: rgb(166, 229, 229);
+  }
+  .gallery-content1 h1{
+    color: rgb(84, 26, 26);
+    text-shadow: 2px 2px 4px rgb(166, 229, 229);
+  }
+  .gallery-heading1{
+    text-align: center;
+  }
+  .gallery-container2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: linear-gradient(45deg, rgb(232, 246, 243), rgb(202, 238, 232));
+    padding: 5% 0;
+  }
+  .gallery-box{
+    width: 30%;
+    height: auto;
+    
+  }
+  .gallery-img1{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  .gallery-title{
+    color: gray;
+    padding: 3%;
+  }
+  .gallery-content{
+    width: 100%;
+    height: auto;
+  }
+  .readme{
+    padding: 5px 10px;
+    color: green;
+    border: none;
+    border-radius: 5px;
+  }
+  .readme:hover{
+    transform: scale(1.05);
+  }
+
+  @media(max-width:768px){
+    .gallery-box{
+      width: 50%;
+      height: auto;
+      margin-top: 5%;
+      padding: 5%;
+    }
+  }
+
+  @media(max-width:480px){
+    .gallery-box{
+      width: 100%;
+      height: auto;
+      margin-top: 5%;
+      padding: 5%;
+    }
+  }
+  .plants-submenu{
+    width: 15rem;
+    height: 10px;
+    position: absolute;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    top: 80px;
+    right: 20%;
+    height: 0;
+   
+  }
+  .plants-submenu li{
+    cursor: pointer;
+    background-color: rgb(64, 202, 64);
+    border-radius: 5px;
+  }
+  .plants-submenu li a{
+    margin: 0;
+    padding: 10px;
+  }
+  .plants-submenu.clicked{
+    display: none;
+  }
+  .submenu-item{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+  }
+  .submenu-item:hover{
+    background-color: #555555;
+    color: white;
+  }
+  
+
+
+/* ----------------------------------------Plants -------------------------------------------------- */
+
+
+.bg_plants{
+  width: 100%;
+  height: 70vh;
+  background-image: url(../Images/leafbg.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.plant-heading{
+  width: 20%;
+  height: 20%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 20%;
+  border-radius: 5px;
+}
+.plant-heading h1{
+  color: white;
+  align-self: center;
+  transition: transform 0.3s ease; 
+}
+.sort-heading{
+  text-align: center;
+  padding: 20px 0; 
+}
+.viewpage{
+  width: 30%;
+  height: auto;
+  position: relative;
+  display: inline-block;
+  background-color: rgba(0, 0, 0,0);
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  margin:1.5%
+}
+.viewpage img{
+  width: 100%;
+  height: 300px;
+  transition: filter 0.3s ease;
+  border-radius: 5px;
+}
+.viewpage .viewingbutton{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0;
+  background-color: rgba(235, 181, 65, 0.8);
+  padding:5px 20px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.viewpage:hover img{
+  filter: blur(3px);
+}
+.viewpage:hover .viewingbutton{
+  opacity: 1;
+}
+.content12 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  box-sizing: border-box;
+  visibility: hidden; /* Initially hidden */
+  transition: visibility 0.3s ease; /* Smooth transition */
+}
+.viewpage:hover .content12 {
+  visibility: visible; /* Show content on hover */
+}
+@media(max-width:768px){
+  .plant-heading{
+    width: 40%;
+  }
+  .viewpage{
+    width: 45%;
+  }
+
+}
+@media(max-width:480px){
+  .plant-heading{
+    width: 40%;
+  }
+  .viewpage{
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .viewpage img{
+    width: 90%;
+    height: 350px;
+  }
+  .content12 {
+    width: 90%;
+  }
+
+}

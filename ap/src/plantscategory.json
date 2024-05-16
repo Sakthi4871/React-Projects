@@ -1,0 +1,255 @@
+{
+    "indoorimages":[
+        {
+            "id":1,
+            "url":"images/Aglaonema Butterfly Plant.jpg",
+            "title":"Aglaonema Butterfly Plant",
+            "scifi":"Aloe barbadensis miller",
+            "link":"/aloevera"
+        },
+        {
+            "id":2,
+            "url":"images/Peperomia Green Plant.jpg",
+            "title":"Peperomia Green Plant",
+            "scifi":"Ocimum basilicum",
+            "link":"/basil"
+        },
+        {
+            "id":3,
+            "url":"images/Ficus Bonsai Plant.jpg",
+            "title":"Ficus Bonsai Plant",
+            "scifi":"Rosmarinus officinalis",
+            "link":"/plants"
+        },
+        {
+            "id":4,
+            "url":"./images/Mistletoe cactus.jpg",
+            "title":"Mistletoe cactus",
+            "scifi":"Lavandula",
+            "link":"/plants"
+        },
+        {
+            "id":5,
+            "url":"/images/Cordyline fruticosa 'Chennai'.jpg",
+            "title":"Cordyline fruticosa",
+            "scifi":"Jasminium",
+            "link":"/plants"
+        },
+        {
+            "id":6,
+            "url":"images/Philodendron Xanadu 'green'.jpg",
+            "title":"Philodendron Xanadu ",
+            "scifi":"Epipremnum aureum",
+            "link":"/plants"
+        },
+        {
+            "id":7,
+            "url":"images/Ruby Starlite Starfish Plant.jpg",
+            "title":"Ruby Starlite Starfish",
+            "scifi":"Dracaena sanderiana",
+            "link":"/plants"
+        },
+        {
+            "id":8,
+            "url":"images/Sanseveria trifasciata.jpg",
+            "title":"Sanseveria trifasciata",
+            "scifi":"Chlorophytum comosum",
+            "link":"/plants"
+        },
+        {
+            "id":9,
+            "url":"images/Zebra plantmm.jpg",
+            "title":"Zebra plantmm",
+            "scifi":"Chlorophytum comosum",
+            "link":"/plants"
+        }
+    ],
+    "trendingimages":[
+        {
+            "id":1,
+            "url":"images/peacelily.jpg",
+            "title":"Peace Lily",
+            "scifi":"Spathiphyllum wallisii",
+            "link":"/aloevera"
+        },
+        {
+            "id":2,
+            "url":"images/Philodendron Xanadu 'green'.jpg",
+            "title":"Philodendron Xanadu",
+            "scifi":"Philodendron bipinnatifidum",
+            "link":"/basil"
+        },
+        {
+            "id":3,
+            "url":"images/Ruby Starlite Starfish Plant.jpg",
+            "title":"Ruby Starfish",
+            "scifi":"Echeveria spp.",
+            "link":"/plants"
+        },
+        {
+            "id":4,
+            "url":"./Images/Sanseveria trifasciata.jpg",
+            "title":"Sanseveria trifasciata",
+            "scifi":"Spathiphyllum wallisii",
+            "link":"/plants"
+        },
+        {
+            "id":5,
+            "url":"images/Jasmine.jpg",
+            "title":"Jasmine",
+            "scifi":"Jasminium",
+            "link":"/plants"
+        },
+        {
+            "id":6,
+            "url":"images/Money.jpg",
+            "title":"Money plant",
+            "scifi":"Epipremnum aureum",
+            "link":"/plants"
+        },
+        {
+            "id":7,
+            "url":"images/Lucky Bamboo Plant - 3 Layer.jpg",
+            "title":"Lucky Bamboo",
+            "scifi":"Dracaena sanderiana",
+            "link":"/plants"
+        },
+        {
+            "id":8,
+            "url":"images/Spiderplant.jpg",
+            "title":"Spider plant",
+            "scifi":"Chlorophytum comosum",
+            "link":"/plants"
+        }
+    ],
+    "recommendimages":[
+        {
+            "id":1,
+            "url":"images/Aloevera.jpg",
+            "title":"Aloevera",
+            "scifi":"Aloe barbadensis miller",
+            "link":"/aloevera"
+        },
+        {
+            "id":2,
+            "url":"images/Basil.jpg",
+            "title":"Basil",
+            "scifi":"Ocimum basilicum",
+            "link":"/basil"
+        },
+        {
+            "id":3,
+            "url":"images/Rosemary.jpg",
+            "title":"Rosemary",
+            "scifi":"Rosmarinus officinalis",
+            "link":"/plants"
+        },
+        {
+            "id":4,
+            "url":"./Images/Lavender.jpg",
+            "title":"Lavender",
+            "scifi":"Lavandula",
+            "link":"/plants"
+        },
+        {
+            "id":5,
+            "url":"images/Jasmine.jpg",
+            "title":"Jasmine",
+            "scifi":"Jasminium",
+            "link":"/plants"
+        },
+        {
+            "id":6,
+            "url":"images/Money.jpg",
+            "title":"Money plant",
+            "scifi":"Epipremnum aureum",
+            "link":"/plants"
+        },
+        {
+            "id":7,
+            "url":"images/Lucky Bamboo Plant - 3 Layer.jpg",
+            "title":"Lucky Bamboo",
+            "scifi":"Dracaena sanderiana",
+            "link":"/plants"
+        },
+        {
+            "id":8,
+            "url":"images/Spiderplant.jpg",
+            "title":"Spider plant",
+            "scifi":"Chlorophytum comosum",
+            "link":"/plants"
+        }
+    ],
+    "outdoorimages":[
+        {
+            "id":1,
+            "url":"images/Big-Parijatham-flower.jpg",
+            "title":"Parijatham",
+            "scifi":"Aloe barbadensis miller",
+            "link":"/aloevera"
+        },
+        {
+            "id":2,
+            "url":"images/origanum majorana.jpg",
+            "title":"Organium Majorana",
+            "scifi":"Ocimum basilicum",
+            "link":"/basil"
+        },
+        {
+            "id":3,
+            "url":"images/desert rose.jpg",
+            "title":"Desert Rose",
+            "scifi":"Rosmarinus officinalis",
+            "link":"/plants"
+        },
+        {
+            "id":4,
+            "url":"./Images/white frangimani.jpg",
+            "title":"White Frangimani",
+            "scifi":"Lavandula",
+            "link":"/plants"
+        },
+        {
+            "id":5,
+            "url":"images/aralia variegated.jpg",
+            "title":"Aralia Variegated",
+            "scifi":"Jasminium",
+            "link":"/plants"
+        },
+        {
+            "id":6,
+            "url":"images/jade bonsai.jpg",
+            "title":"Jade Bonsai",
+            "scifi":"Epipremnum aureum",
+            "link":"/plants"
+        },
+        {
+            "id":7,
+            "url":"images/night jasmine.jpg",
+            "title":"Night Jasmine",
+            "scifi":"Dracaena sanderiana",
+            "link":"/plants"
+        },
+        {
+            "id":8,
+            "url":"images/Alternanthera-Dentata.jpg",
+            "title":"Alternanthera Dentata",
+            "scifi":"Chlorophytum comosum",
+            "link":"/plants"
+        },
+        {
+            "id":9,
+            "url":"images/croton.jpg",
+            "title":"Garden croton",
+            "scifi":"Chlorophytum comosum",
+            "link":"/plants"
+        },
+        {
+            "id":10,
+            "url":"images/costus speciosus.jpg",
+            "title":"Costus Speciosus",
+            "scifi":"Chlorophytum comosum",
+            "link":"/plants"
+        }
+    ]
+}

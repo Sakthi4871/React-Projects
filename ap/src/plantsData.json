@@ -1,0 +1,159 @@
+{
+    "plantsortdata":[
+        {
+            "id":1,
+            "url":"images/trendingposter.png",
+            "link":"/trendingpage",
+            "title":"Trending Plants"
+        },
+        {
+            "id":2,
+            "url":"images/recommendposter.png",
+            "link":"/recommendedplants",
+            "title":"Recommended Plants"
+        },
+        {
+            "id":3,
+            "url":"images/indoorposter.png",
+            "link":"/indoorplants",
+            "title":"Indoor Plants"
+        },
+        {
+            "id":4,
+            "url":"images/outdoorposter.png",
+            "link":"/outdoorplants",
+            "title":"Outdoor Plants"
+        }
+    ],
+    "plantinfo":[
+        {
+            "id":1,
+            "url":"images/peacelily.jpg",
+            "title":"Peace Lily",
+            "scifi":"Spathiphyllum wallisii",
+            "link":"/aloevera",
+            "category":"trending"
+        },
+        {
+            "id":2,
+            "url":"images/Aloevera.jpg",
+            "title":"Aloevera",
+            "scifi":"Aloe barbadensis miller",
+            "link":"/aloevera",
+            "category":"recommended"
+        },
+        {
+            "id":3,
+            "url":"images/Philodendron Xanadu 'green'.jpg",
+            "title":"Philodendron Xanadu",
+            "scifi":"Philodendron bipinnatifidum",
+            "link":"/basil",
+            "category":"trending"
+        },
+        {
+            "id":4,
+            "url":"images/Basil.jpg",
+            "title":"Basil",
+            "scifi":"Ocimum basilicum",
+            "link":"/basil",
+            "category":"recommended"
+        },
+        {
+            "id":5,
+            "url":"images/Ruby Starlite Starfish Plant.jpg",
+            "title":"Ruby Starfish",
+            "scifi":"Echeveria spp.",
+            "link":"/plants",
+            "category":"trending"
+        },
+        {
+            "id":6,
+            "url":"images/Rosemary.jpg",
+            "title":"Rosemary",
+            "scifi":"Rosmarinus officinalis",
+            "link":"/plants",
+            "category":"recommended"
+        },
+        {
+            "id":7,
+            "url":"./Images/Sanseveria trifasciata.jpg",
+            "title":"Sanseveria trifasciata",
+            "scifi":"Spathiphyllum wallisii",
+            "link":"/plants",
+            "category":"trending"
+        },
+        {
+            "id":8,
+            "url":"./Images/Lavender.jpg",
+            "title":"Lavender",
+            "scifi":"Lavandula",
+            "link":"/plants",
+            "category":"recommended"
+        },
+        {
+            "id":9,
+            "url":"images/Jasmine.jpg",
+            "title":"Jasmine",
+            "scifi":"Jasminium",
+            "link":"/plants",
+            "category":"trending"
+        },
+        {
+            "id":10,
+            "url":"images/Jasmine.jpg",
+            "title":"Jasmine",
+            "scifi":"Jasminium",
+            "link":"/plants",
+            "category":"recommended"
+        },
+        {
+            "id":11,
+            "url":"images/Money.jpg",
+            "title":"Money plant",
+            "scifi":"Epipremnum aureum",
+            "link":"/plants",
+            "category":"trending"
+        },
+        {
+            "id":12,
+            "url":"images/Money.jpg",
+            "title":"Money plant",
+            "scifi":"Epipremnum aureum",
+            "link":"/plants",
+            "category":"recommended"
+        },
+        {
+            "id":13,
+            "url":"images/Lucky Bamboo Plant - 3 Layer.jpg",
+            "title":"Lucky Bamboo",
+            "scifi":"Dracaena sanderiana",
+            "link":"/plants",
+            "category":"trending"
+        },
+        {
+            "id":14,
+            "url":"images/Lucky Bamboo Plant - 3 Layer.jpg",
+            "title":"Lucky Bamboo",
+            "scifi":"Dracaena sanderiana",
+            "link":"/plants",
+            "category":"recommended"
+        },
+        {
+            "id":15,
+            "url":"images/Spiderplant.jpg",
+            "title":"Spider plant",
+            "scifi":"Chlorophytum comosum",
+            "link":"/plants",
+            "category":"trending"
+        },
+        {
+            "id":16,
+            "url":"images/Spiderplant.jpg",
+            "title":"Spider plant",
+            "scifi":"Chlorophytum comosum",
+            "link":"/plants",
+            "category":"recommended"
+        }
+        
+    ]
+}

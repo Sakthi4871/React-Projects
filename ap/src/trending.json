@@ -1,0 +1,60 @@
+{
+    "images":[
+        {
+            "id":1,
+            "url":"images/peacelily.jpg",
+            "title":"Peace Lily",
+            "scifi":"Spathiphyllum wallisii",
+            "link":"/peacelily"
+        },
+        {
+            "id":2,
+            "url":"images/Philodendron Xanadu 'green'.jpg",
+            "title":"Philodendron Xanadu",
+            "scifi":"Philodendron bipinnatifidum",
+            "link":"/basil"
+        },
+        {
+            "id":3,
+            "url":"images/Ruby Starlite Starfish Plant.jpg",
+            "title":"Ruby Starfish",
+            "scifi":"Echeveria spp.",
+            "link":"/plants"
+        },
+        {
+            "id":4,
+            "url":"./Images/Sanseveria trifasciata.jpg",
+            "title":"Sanseveria trifasciata",
+            "scifi":"Spathiphyllum wallisii",
+            "link":"/plants"
+        },
+        {
+            "id":5,
+            "url":"images/Jasmine.jpg",
+            "title":"Jasmine",
+            "scifi":"Jasminium",
+            "link":"/plants"
+        },
+        {
+            "id":6,
+            "url":"images/Money.jpg",
+            "title":"Money plant",
+            "scifi":"Epipremnum aureum",
+            "link":"/plants"
+        },
+        {
+            "id":7,
+            "url":"images/Lucky Bamboo Plant - 3 Layer.jpg",
+            "title":"Lucky Bamboo",
+            "scifi":"Dracaena sanderiana",
+            "link":"/plants"
+        },
+        {
+            "id":8,
+            "url":"images/Spiderplant.jpg",
+            "title":"Spider plant",
+            "scifi":"Chlorophytum comosum",
+            "link":"/plants"
+        }
+    ]
+}

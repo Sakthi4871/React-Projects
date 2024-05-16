@@ -1,0 +1,60 @@
+{
+    "images":[
+        {
+            "id":1,
+            "url":"images/Aloevera.jpg",
+            "title":"Aloevera",
+            "scifi":"Aloe barbadensis miller",
+            "link":"/aloevera"
+        },
+        {
+            "id":2,
+            "url":"images/Basil.jpg",
+            "title":"Basil",
+            "scifi":"Ocimum basilicum",
+            "link":"/basil"
+        },
+        {
+            "id":3,
+            "url":"images/Rosemary.jpg",
+            "title":"Rosemary",
+            "scifi":"Rosmarinus officinalis",
+            "link":"/plants"
+        },
+        {
+            "id":4,
+            "url":"./Images/Lavender.jpg",
+            "title":"Lavender",
+            "scifi":"Lavandula",
+            "link":"/plants"
+        },
+        {
+            "id":5,
+            "url":"images/Jasmine.jpg",
+            "title":"Jasmine",
+            "scifi":"Jasminium",
+            "link":"/plants"
+        },
+        {
+            "id":6,
+            "url":"images/Money.jpg",
+            "title":"Money plant",
+            "scifi":"Epipremnum aureum",
+            "link":"/plants"
+        },
+        {
+            "id":7,
+            "url":"images/Lucky Bamboo Plant - 3 Layer.jpg",
+            "title":"Lucky Bamboo",
+            "scifi":"Dracaena sanderiana",
+            "link":"/plants"
+        },
+        {
+            "id":8,
+            "url":"images/Spiderplant.jpg",
+            "title":"Spider plant",
+            "scifi":"Chlorophytum comosum",
+            "link":"/plants"
+        }
+    ]
+}
