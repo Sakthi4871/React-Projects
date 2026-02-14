@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Be My Valentine ❤️</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #ffd6e8, #ffc0cb, #ffb6d9);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .container {
+      position: relative;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.35);
+      padding: 40px;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      max-width: 500px;
+    }
+
+    h1 {
+      font-size: 26px;
+      font-weight: 700;
+      color: #b30059;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 20px;
+      color: #660033;
+    }
+
+    img {
+      width: 200px;
+      margin-bottom: 25px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    button {
+      padding: 12px 24px;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    #yesBtn {
+      background: #ff4d88;
+      color: white;
+    }
+
+    #yesBtn:hover {
+      transform: scale(1.1);
+    }
+
+    #noBtn {
+      background: white;
+      color: #ff4d88;
+    }
+
+    .glow {
+      animation: glow 1s infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        box-shadow: 0 0 10px #ff4d88;
+      }
+
+      to {
+        box-shadow: 0 0 25px #ff1a75;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 id="mainText">Will you be my Bhondhaas?</h1>
+    <p>You’d make me the happiest person alive 🥺</p>
+
+    <img id="gifImage" src="https://media.giphy.com/media/ROF8OQvDmxytW/giphy.gif" alt="Sad Baby">
+
+    <div class="buttons">
+      <button id="yesBtn">💖 Yes, of course!</button>
+      <button id="noBtn">😢 No</button>
+    </div>
+
+    <!-- Hidden Email Form -->
+    <form id="responseForm" action="https://formsubmit.co/sakthibabu013@gmail.com" method="POST" style="display:none;">
+
+      <input type="hidden" name="_subject" value="She said YES ❤️">
+      <input type="hidden" name="Response" value="She clicked YES on your Valentine website 💕">
+      <input type="hidden" name="_captcha" value="false">
+    </form>
+
+  </div>
+
+  <script>
+    const noBtn = document.getElementById("noBtn");
+    const yesBtn = document.getElementById("yesBtn");
+    const gifImage = document.getElementById("gifImage");
+    const mainText = document.getElementById("mainText");
+    const container = document.querySelector(".container");
+    const form = document.getElementById("responseForm");
+
+    let hoverCount = 0;
+
+    const noTexts = [
+      "Are you sure?",
+      "Really really sure?",
+      "Don’t break my heart 🥺",
+      "Last chance…"
+    ];
+
+    function moveButton() {
+      noBtn.style.position = "absolute";
+
+      const maxX = container.clientWidth - noBtn.offsetWidth;
+      const maxY = container.clientHeight - noBtn.offsetHeight;
+
+      const randomX = Math.random() * maxX;
+      const randomY = Math.random() * maxY;
+
+      noBtn.style.left = randomX + "px";
+      noBtn.style.top = randomY + "px";
+
+      if (hoverCount < noTexts.length) {
+        noBtn.innerText = noTexts[hoverCount];
+      }
+
+      hoverCount++;
+    }
+
+    noBtn.addEventListener("mouseenter", moveButton);
+    noBtn.addEventListener("touchstart", function (e) {
+      e.preventDefault();
+      moveButton();
+    });
+
+    yesBtn.addEventListener("click", () => {
+      mainText.innerText =
+        "You just made me the happiest person in the world 💕";
+
+      gifImage.src =
+        "https://media.giphy.com/media/OkJat1YNdoD3W/giphy.gif";
+
+      yesBtn.classList.add("glow");
+
+      // Submit form (send email)
+      setTimeout(() => {
+        form.submit();
+      }, 1500);
+    });
+  </script>
+
+</body>
+
+</html>
