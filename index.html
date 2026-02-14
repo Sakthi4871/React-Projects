@@ -1,188 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Be My Valentine ❤️</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Be My Valentine ❤️</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 
-    body {
-      height: 100vh;
-      background: linear-gradient(135deg, #ffd6e8, #ffc0cb, #ffb6d9);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-      position: relative;
-    }
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #ffd6e8, #ffc0cb, #ffb6d9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
 
-    .container {
-      position: relative;
-      text-align: center;
-      background: rgba(255, 255, 255, 0.35);
-      padding: 40px;
-      border-radius: 20px;
-      backdrop-filter: blur(10px);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-      width: 90%;
-      max-width: 500px;
-    }
+/* Floating Hearts */
+.heart {
+  position: absolute;
+  bottom: -20px;
+  color: rgba(255, 105, 180, 0.6);
+  font-size: 20px;
+  animation: floatUp 12s linear infinite;
+}
 
-    h1 {
-      font-size: 26px;
-      font-weight: 700;
-      color: #b30059;
-      margin-bottom: 10px;
-    }
+@keyframes floatUp {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(-120vh); opacity: 0; }
+}
 
-    p {
-      font-size: 16px;
-      margin-bottom: 20px;
-      color: #660033;
-    }
+/* Flying Butterflies */
+.butterfly {
+  position: absolute;
+  bottom: -20px;
+  font-size: 22px;
+  animation: fly 15s linear infinite;
+}
 
-    img {
-      width: 200px;
-      margin-bottom: 25px;
-    }
+@keyframes fly {
+  0% { transform: translateY(0) translateX(0); opacity: 1; }
+  50% { transform: translateY(-50vh) translateX(40px); }
+  100% { transform: translateY(-120vh) translateX(-40px); opacity: 0; }
+}
 
-    .buttons {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
+.container {
+  position: relative;
+  text-align: center;
+  background: rgba(255,255,255,0.35);
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 500px;
+}
 
-    button {
-      padding: 12px 24px;
-      border-radius: 50px;
-      border: none;
-      cursor: pointer;
-      font-size: 16px;
-      font-weight: 600;
-      transition: all 0.3s ease;
-    }
+h1 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #b30059;
+  margin-bottom: 10px;
+}
 
-    #yesBtn {
-      background: #ff4d88;
-      color: white;
-    }
+p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #660033;
+}
 
-    #yesBtn:hover {
-      transform: scale(1.1);
-    }
+img {
+  width: 200px;
+  margin-bottom: 25px;
+  border-radius: 15px;
+}
 
-    #noBtn {
-      background: white;
-      color: #ff4d88;
-    }
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
 
-    .glow {
-      animation: glow 1s infinite alternate;
-    }
+button {
+  padding: 12px 24px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
 
-    @keyframes glow {
-      from {
-        box-shadow: 0 0 10px #ff4d88;
-      }
+#yesBtn {
+  background: #ff4d88;
+  color: white;
+}
 
-      to {
-        box-shadow: 0 0 25px #ff1a75;
-      }
-    }
-  </style>
+#yesBtn:hover {
+  transform: scale(1.1);
+}
+
+#noBtn {
+  background: white;
+  color: #ff4d88;
+}
+
+.glow {
+  animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 10px #ff4d88; }
+  to { box-shadow: 0 0 25px #ff1a75; }
+}
+
+/* Confetti */
+.confetti {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  top: -10px;
+  animation: confettiFall 4s linear forwards;
+}
+
+@keyframes confettiFall {
+  to {
+    transform: translateY(100vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+</style>
 </head>
 
 <body>
 
-  <div class="container">
-    <h1 id="mainText">Will you be my Bhondhaas?</h1>
-    <p>You’d make me the happiest person alive 🥺</p>
+<div class="container">
+  <h1 id="mainText">Will you be my Bhondhaas?</h1>
+  <p>You’d make me the happiest person alive 🥺</p>
 
-    <img id="gifImage" src="https://media.giphy.com/media/ROF8OQvDmxytW/giphy.gif" alt="Sad Baby">
+  <!-- Welcome Cute Cat -->
+  <img id="gifImage"
+    src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif"
+    alt="Cute Begging Cat">
 
-    <div class="buttons">
-      <button id="yesBtn">💖 Yes, of course!</button>
-      <button id="noBtn">😢 No</button>
-    </div>
-
-    <!-- Hidden Email Form -->
-    <form id="responseForm" action="https://formsubmit.co/sakthibabu013@gmail.com" method="POST" style="display:none;">
-
-      <input type="hidden" name="_subject" value="She said YES ❤️">
-      <input type="hidden" name="Response" value="She clicked YES on your Valentine website 💕">
-      <input type="hidden" name="_captcha" value="false">
-    </form>
-
+  <div class="buttons">
+    <button id="yesBtn">💖 Yes, of course!</button>
+    <button id="noBtn">😢 No</button>
   </div>
 
-  <script>
-    const noBtn = document.getElementById("noBtn");
-    const yesBtn = document.getElementById("yesBtn");
-    const gifImage = document.getElementById("gifImage");
-    const mainText = document.getElementById("mainText");
-    const container = document.querySelector(".container");
-    const form = document.getElementById("responseForm");
+  <!-- Hidden Email Form -->
+  <form id="responseForm"
+        action="https://formsubmit.co/sakthibabu013@gmail.com"
+        method="POST"
+        style="display:none;">
+    <input type="hidden" name="_subject" value="She said YES ❤️">
+    <input type="hidden" name="Response" value="She clicked YES on your Valentine website 💕">
+    <input type="hidden" name="_captcha" value="false">
+  </form>
+</div>
 
-    let hoverCount = 0;
+<script>
+const noBtn = document.getElementById("noBtn");
+const yesBtn = document.getElementById("yesBtn");
+const gifImage = document.getElementById("gifImage");
+const mainText = document.getElementById("mainText");
+const container = document.querySelector(".container");
+const form = document.getElementById("responseForm");
 
-    const noTexts = [
-      "Are you sure?",
-      "Really really sure?",
-      "Don’t break my heart 🥺",
-      "Last chance…"
-    ];
+let hoverCount = 0;
 
-    function moveButton() {
-      noBtn.style.position = "absolute";
+const noTexts = [
+  "Are you sure?",
+  "Really really sure?",
+  "Don’t break my heart 🥺",
+  "Last chance…"
+];
 
-      const maxX = container.clientWidth - noBtn.offsetWidth;
-      const maxY = container.clientHeight - noBtn.offsetHeight;
+function moveButton() {
+  noBtn.style.position = "absolute";
 
-      const randomX = Math.random() * maxX;
-      const randomY = Math.random() * maxY;
+  const maxX = container.clientWidth - noBtn.offsetWidth;
+  const maxY = container.clientHeight - noBtn.offsetHeight;
 
-      noBtn.style.left = randomX + "px";
-      noBtn.style.top = randomY + "px";
+  const randomX = Math.random() * maxX;
+  const randomY = Math.random() * maxY;
 
-      if (hoverCount < noTexts.length) {
-        noBtn.innerText = noTexts[hoverCount];
-      }
+  noBtn.style.left = randomX + "px";
+  noBtn.style.top = randomY + "px";
 
-      hoverCount++;
-    }
+  if (hoverCount < noTexts.length) {
+    noBtn.innerText = noTexts[hoverCount];
+  }
 
-    noBtn.addEventListener("mouseenter", moveButton);
-    noBtn.addEventListener("touchstart", function (e) {
-      e.preventDefault();
-      moveButton();
-    });
+  if (hoverCount >= 3) {
+    noBtn.style.transform = "scale(0.85)";
+  }
 
-    yesBtn.addEventListener("click", () => {
-      mainText.innerText =
-        "You just made me the happiest person in the world 💕";
+  hoverCount++;
+}
 
-      gifImage.src =
-        "https://media.giphy.com/media/OkJat1YNdoD3W/giphy.gif";
+noBtn.addEventListener("mouseenter", moveButton);
+noBtn.addEventListener("touchstart", function(e) {
+  e.preventDefault();
+  moveButton();
+});
 
-      yesBtn.classList.add("glow");
+yesBtn.addEventListener("click", () => {
+  mainText.innerText =
+    "You just made me the happiest person in the world 💕";
 
-      // Submit form (send email)
-      setTimeout(() => {
-        form.submit();
-      }, 1500);
-    });
-  </script>
+  // Happy cat GIF
+  gifImage.src =
+    "https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif";
+
+  yesBtn.classList.add("glow");
+
+  launchConfetti();
+
+  setTimeout(() => {
+    form.submit();
+  }, 1500);
+});
+
+/* Confetti */
+function launchConfetti() {
+  for (let i = 0; i < 120; i++) {
+    const confetti = document.createElement("div");
+    confetti.classList.add("confetti");
+    confetti.style.left = Math.random() * 100 + "vw";
+    confetti.style.backgroundColor =
+      `hsl(${Math.random() * 360}, 100%, 75%)`;
+    confetti.style.animationDuration =
+      (Math.random() * 3 + 2) + "s";
+    document.body.appendChild(confetti);
+    setTimeout(() => confetti.remove(), 4000);
+  }
+}
+
+/* Floating hearts */
+function createHeart() {
+  const heart = document.createElement("div");
+  heart.classList.add("heart");
+  heart.innerText = "💕";
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.fontSize = Math.random() * 15 + 15 + "px";
+  heart.style.animationDuration =
+    (Math.random() * 5 + 7) + "s";
+  document.body.appendChild(heart);
+  setTimeout(() => heart.remove(), 12000);
+}
+
+/* Butterflies */
+function createButterfly() {
+  const butterfly = document.createElement("div");
+  butterfly.classList.add("butterfly");
+  butterfly.innerText = "🦋";
+  butterfly.style.left = Math.random() * 100 + "vw";
+  butterfly.style.color = "rgba(255, 105, 180, 0.8)";
+  butterfly.style.animationDuration =
+    (Math.random() * 5 + 10) + "s";
+  document.body.appendChild(butterfly);
+  setTimeout(() => butterfly.remove(), 15000);
+}
+
+setInterval(createHeart, 1200);
+setInterval(createButterfly, 2000);
+</script>
 
 </body>
-
 </html>
